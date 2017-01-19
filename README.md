@@ -10,18 +10,24 @@ _This is a application designed to practice basic Behavior-Driven-Development by
 
 ## Behavior
 
-* _A year that is NOT a leap year_
-_Input: 1993_
-_Output: false_
-* _A year that is that is divisible by 4_
-_Input: 2004
-_Output: true
-* _A year that is divisible by 100_
-_Input: 1900
-_Output: false_
-* _A year that is divisible by 400_
-_Input: 2000
-_Output: true
+* The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
+_Example Input: 3_
+_Example Output: 3_
+* The program adds "ay" to single-letter words beginning with a vowel.
+_Example Input: i_
+_Example Output: iay_
+* The program takes words beginning with a vowel, adds "ay" to the end.
+_Example Input: user_
+_Example Output: useray_
+* The program takes words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay".
+_Example Input: this_
+_Example Output: isthay_
+* The program takes the first consonants include "qu", and moves the "u" along with the "q".
+_Example Input: squash_
+_Example Output: ashsqu_
+* The program takes any words beginning with "y", and treats "y" as a consonant.
+_Example Input: 2000_
+_Example Output:_
 
 ## Setup/Installation Requirements
 
