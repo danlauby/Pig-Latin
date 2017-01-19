@@ -1,5 +1,11 @@
 var pigLatin = function(word) {
-  return false;
+  var vowels = ['a', 'e', 'i', 'o', 'u'];
+  if (vowels.indexOf(word[0]) > -1) {
+    word += 'ay';
+    return true;
+  } else {
+    return false;
+  }
 }
 
 
@@ -9,8 +15,9 @@ var pigLatin = function(word) {
 
 $(function() {
   $('form#pig-latin').submit(function(e) {
-    var word = parseInt($('input#word').val());
-    var result = pigLatin(word);
+    var word = $('input#word').val();
+    var wordLower = word.toLowerCase();
+    var result = pigLatin(wordLower);
     $('#result').text(result);
     e.preventDefault();
   });
