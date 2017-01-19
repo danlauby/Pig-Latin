@@ -26,7 +26,7 @@ _Example Output: isthay_
 _Example Input: squash_
 _Example Output: ashsqu_
 * The program takes any words beginning with "y", and treats "y" as a consonant.
-_Example Input: 2000_
+_Example Input: _
 _Example Output:_
 
 ## Setup/Installation Requirements
