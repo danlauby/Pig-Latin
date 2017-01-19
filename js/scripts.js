@@ -1,7 +1,8 @@
 var pigLatin = function(word) {
   var vowels = ['a', 'e', 'i', 'o', 'u'];
-  if (vowels.indexOf(word[0]) > -1) {
+  if ((word.length === 1) && (vowels.indexOf(word[0]) > -1)) {
     word += 'ay';
+    console.log(word);
     return true;
   } else {
     return false;
